@@ -2,9 +2,11 @@ package com.navikapp.navik.service;
 
 import com.navikapp.navik.domain.Activity;
 
+import java.util.List;
+
 public interface ActivityService {
 
-    public Iterable<Activity> list();
+    List<Activity> list();
 
-    public void save(Activity activity);
+    void save(Activity activity);
 }

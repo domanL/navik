@@ -1,0 +1,22 @@
+<div class="col-md-6 activity-container">
+  <h2 style="margin: auto"> Activity Details</h2>
+  <!--button class="btn btn-danger" style="width:100px" (click)="addActivity()"> Add Activity</button-->
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>Activity Description</th>
+      <th>Complete?</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let activity of activities">
+      <td class="hidden">{{activity.id}}</td>
+      <td>{{activity.name}}</td>
+      <td>{{activity.completed}}</td>
+      <!--td><button class="btn btn-success" (click)="deleteActivity(activity)"> Delete</button>
+        <button class="btn btn-success" (click)="editActivity(activity)" style="margin-left: 20px;"> Edit</button></td-->
+    </tr>
+    </tbody>
+  </table>
+</div>

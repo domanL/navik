@@ -5,15 +5,23 @@
     <thead>
     <tr>
       <th class="hidden">Id</th>
-      <th>Activity Description</th>
-      <th>Complete?</th>
+      <th>Category</th>
+      <th>Name</th>
+      <th>Quantity</th>
+      <th>Unit</th>
+      <th>Series</th>
+      <th>Experience</th>
     </tr>
     </thead>
     <tbody>
     <tr *ngFor="let activity of activities">
       <td class="hidden">{{activity.id}}</td>
+      <td></td>
       <td>{{activity.name}}</td>
+      <td></td>
+      <td></td>
       <td>{{activity.completed}}</td>
+      <td></td>
       <!--td><button class="btn btn-success" (click)="deleteActivity(activity)"> Delete</button>
         <button class="btn btn-success" (click)="editActivity(activity)" style="margin-left: 20px;"> Edit</button></td-->
     </tr>
